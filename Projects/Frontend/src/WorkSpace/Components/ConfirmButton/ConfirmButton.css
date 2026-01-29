@@ -1,0 +1,44 @@
+* {
+    /*初期設定*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+.ConfirmButton {
+    /*大きさ設定*/
+    height: 10%;
+    width: 40%;
+
+    /*位置設定（中の文字の位置設定）*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*背景設定(ボタンの色）*/
+    background-color: #BB967A;
+
+    /*飾り設定（角丸め）*/
+    border-radius: 20px;
+
+    /*文字設定*/
+    font-size: 30px;
+    color: white;
+    font-family: 'Mochiy Pop P One','cursive';
+}
+
+/*選択されている時の動作*/
+.ConfirmButton:hover {
+    transform: scale(1.05);
+}
+
+.ConfirmButton.focus {
+    transform: scale(1.05);
+}
