@@ -17,12 +17,11 @@ h1 {
     font-size: 80px;
     color: white;
     font-family: 'Mochiy Pop P One','cursive';
-    /* -webkit-text-stroke: 3px #8E3E3E; */
     text-shadow:
-    3px 3px 0 #8E3E3E,
-   -3px 3px 0 #8E3E3E,
-    3px -3px 0 #8E3E3E,
-   -3px -3px 0 #8E3E3E;
+    5px 5px 0 #8E3E3E,
+   -5px 5px 0 #8E3E3E,
+    5px -5px 0 #8E3E3E,
+   -5px -5px 0 #8E3E3E;
     font-weight: 900;
 }
 
