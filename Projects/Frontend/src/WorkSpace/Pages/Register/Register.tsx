@@ -1,8 +1,8 @@
-import "./LoginRegister.css"
+import "./Register.css"
 import InputField from "../../Components/InputField/InputField";
 import ConfirmButton from "../../Components/ConfirmButton/ConfirmButton";
 
-function LoginRegister() {
+function Register() {
     return (
         <div className="LoginRegisterBackground">
             <h1><span className="Pink">〇〇</span>
@@ -19,4 +19,4 @@ function LoginRegister() {
     )
 }
 
-export default LoginRegister;    
+export default Register;    
