@@ -4,6 +4,7 @@ import Register from "./WorkSpace/Pages/Register/Register.tsx";
 import Home from "./WorkSpace/Pages/Home/Home.tsx";
 import RoomID from "./WorkSpace/Pages/RoomID/RoomID.tsx";
 import Wating from "./WorkSpace/Pages/Wating/Wating.tsx";
+import Prepare from "./WorkSpace/Pages/Prepare/Prepare.tsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/Register' element={<Register />} /> 
         <Route path='/RoomID' element={<RoomID />} /> 
         <Route path='/Waiting' element={<Wating />} />
+        <Route path='/Prepare' element={<Prepare />} />
       </Routes>
     </BrowserRouter>
     </>
