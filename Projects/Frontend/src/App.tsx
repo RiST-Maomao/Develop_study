@@ -1,17 +1,23 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LoginRegister from "./WorkSpace/Pages/LoginRegister/LoginRegister.tsx";
+import { Toaster } from "react-hot-toast";
+import Register from "./WorkSpace/Pages/Register/Register.tsx";
 import Home from "./WorkSpace/Pages/Home/Home.tsx";
+import RoomID from "./WorkSpace/Pages/RoomID/RoomID.tsx";
+import Wating from "./WorkSpace/Pages/Wating/Wating.tsx";
 
 function App() {
   return (
+    <>
+    <Toaster />
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} /> 
-
-        {/* <Route path='/' element={<LoginRegister />} />
-        <Route path='/login' element={<Home />} /> */}
+        <Route path='/Register' element={<Register />} /> 
+        <Route path='/RoomID' element={<RoomID />} /> 
+        <Route path='/Waiting' element={<Wating />} />
       </Routes>
     </BrowserRouter>
+    </>
   )
 }
 
