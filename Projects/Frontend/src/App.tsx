@@ -6,6 +6,8 @@ import RoomID from "./WorkSpace/Pages/RoomID/RoomID.tsx";
 import Wating from "./WorkSpace/Pages/Wating/Wating.tsx";
 import Prepare from "./WorkSpace/Pages/Prepare/Prepare.tsx";
 import Chatting from "./WorkSpace/Pages/Chatting/Chatting.tsx";
+import Vote from "./WorkSpace/Pages/Vote/Vote.tsx";
+import Result from "./WorkSpace/Pages/Result/Result.tsx";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path='/Waiting' element={<Wating />} />
         <Route path='/Prepare' element={<Prepare />} />
         <Route path='/Chatting' element={<Chatting />} />
+        <Route path='/Vote' element={<Vote />} />
+        <Route path='/Result' element={<Result />} />
       </Routes>
     </BrowserRouter>
     </>

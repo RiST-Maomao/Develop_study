@@ -2,7 +2,7 @@ import "./Wating.css"
 import { useNavigate } from "react-router-dom";
 import GrowButton from "../../Components/GrowButton/GrowButton";
 
-function Wating() {
+function Waiting() {
     const navigate = useNavigate();
 
     return (
@@ -26,4 +26,4 @@ function Wating() {
     )
 }
 
-export default Wating;    
+export default Waiting;    
