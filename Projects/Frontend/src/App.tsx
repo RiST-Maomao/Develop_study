@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import Register from "./WorkSpace/Pages/Register/Register.tsx";
 import Home from "./WorkSpace/Pages/Home/Home.tsx";
+import Register from "./WorkSpace/Pages/Register/Register.tsx";
 import RoomID from "./WorkSpace/Pages/RoomID/RoomID.tsx";
 import Wating from "./WorkSpace/Pages/Wating/Wating.tsx";
 import Prepare from "./WorkSpace/Pages/Prepare/Prepare.tsx";
+import Chatting from "./WorkSpace/Pages/Chatting/Chatting.tsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/RoomID' element={<RoomID />} /> 
         <Route path='/Waiting' element={<Wating />} />
         <Route path='/Prepare' element={<Prepare />} />
+        <Route path='/Chatting' element={<Chatting />} />
       </Routes>
     </BrowserRouter>
     </>
