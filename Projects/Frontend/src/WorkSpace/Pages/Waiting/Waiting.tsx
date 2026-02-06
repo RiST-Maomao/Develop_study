@@ -1,4 +1,4 @@
-import "./Wating.css"
+import "./Waiting.css"
 import { useNavigate } from "react-router-dom";
 import GrowButton from "../../Components/GrowButton/GrowButton";
 
