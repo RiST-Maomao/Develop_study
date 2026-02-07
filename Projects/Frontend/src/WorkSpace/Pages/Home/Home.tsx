@@ -9,7 +9,7 @@ function Home() {
             </h1>
             <div className="HomeBox">
                 <div className="HomeMenue">
-                    <GrowButton label="ルール" onClick={() => window.location.href = "/"} className="HomeRule"type="button" />
+                    <GrowButton label="ルール" onClick={() => window.location.href = "/Rule"} className="HomeRule"type="button" />
                 </div>
                 <div className="HomeGame">
                     <GrowButton label="スタート" onClick={() => window.location.href = "/Register"} className="HomeStart"type="button" />

@@ -78,7 +78,6 @@ h2 {
 
 .WaitingPlayer {
     /*大きさ設定*/
-    min-height: 18%;
     width: 100%;
 
     /*位置設定*/
@@ -95,6 +94,9 @@ h2 {
     font-family: 'Mochiy Pop P One', 'cursive';
     color: #423B34;
     font-size: 30px;
+
+    /*余白設定*/
+    padding: 5%;
 }
 
 .WaitingButton {

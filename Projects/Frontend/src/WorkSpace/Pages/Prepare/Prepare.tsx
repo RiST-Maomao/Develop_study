@@ -13,7 +13,7 @@ function Prepare() {
             <div className="PrepareBackground">
                 <div className="PrepareText">
                     <span className="Blue">あなたの役職は</span>
-                    <span className="Pink">００</span>
+                    <span className="Pink">〇〇</span>
                 </div>
                 {/* ここの役職変更 */}
                 <div className="PrepareBox">

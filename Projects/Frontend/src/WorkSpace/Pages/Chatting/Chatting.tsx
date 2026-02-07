@@ -5,6 +5,7 @@ function Chatting() {
         <div className="ChattingBackground">
             <h2>話し合い中…</h2>
             <div className="ChattingBox">
+                <p>司会による発言（Arrayの中かも？）</p>
                 {Array.from({ length: 6 }).map((_, i) => (
                     <div className="ChattingField">
                         <p>プレイヤー名</p>

@@ -162,12 +162,18 @@ h2 {
     padding: 3%;
 }
 
-.EndField p {
-    /*文字設定*/
+.EndName {
+    /*大きさ設定*/
+    width: 100%;
+
+    /*背景設定*/
+    background-color: transparent;
+
+   /*文字設定*/
     font-family: 'Mochiy Pop P One', 'cursive';
     color: #423B34;
     font-size: 30px;
-    text-shadow: none;
+    text-shadow: none; 
 }
 
 .EndButton {

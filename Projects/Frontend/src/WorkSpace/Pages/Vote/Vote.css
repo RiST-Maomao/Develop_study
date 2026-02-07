@@ -89,7 +89,6 @@ h2 {
 
 .VoteSelect {
     /*大きさ設定*/
-    min-height: 20%;
     width: 90%;
 
     /*位置設定*/
@@ -110,8 +109,7 @@ h2 {
 
     /*余白設定*/
     gap: 3%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: 5%;
 }
 
 .VoteSelect input[type="radio"] {

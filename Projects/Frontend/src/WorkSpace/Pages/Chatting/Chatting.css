@@ -74,6 +74,11 @@ h2 {
     padding-left: 10%;
     padding-right: 10%;
     gap: 5%;
+
+    /*文字設定*/
+    font-family: 'Mochiy Pop P One', 'cursive';
+    color: #423B34;
+    font-size: 25px;
 }
 
 .ChattingField {

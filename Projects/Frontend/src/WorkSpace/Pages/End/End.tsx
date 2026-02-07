@@ -22,7 +22,9 @@ function End() {
                             <p>人狼</p>
                             <div className="EndField">
                                 {Array.from({ length: 3 }).map((_, i) => (
-                                    <p>名前</p>
+                                    <button onClick={() => { navigate("/Prompt"); }} className="EndName" type="button">
+                                        名前
+                                    </button>
                                 ))}
                             </div>
                         </div>
@@ -30,7 +32,9 @@ function End() {
                             <p>村人</p>
                             <div className="EndField">
                                 {Array.from({ length: 3 }).map((_, i) => (
-                                    <p>名前</p>
+                                    <button onClick={() => { navigate("/Prompt"); }} className="EndName" type="button">
+                                        名前
+                                    </button>
                                 ))}
                             </div>
                         </div>
