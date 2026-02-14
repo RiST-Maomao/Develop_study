@@ -1,0 +1,138 @@
+
+* {
+    /*初期設定*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    /*文字設定*/
+    font-size: 60px;
+    font-family: 'Mochiy Pop P One', 'cursive';
+    text-shadow:
+        5px 5px 0 #635250,
+        -5px 5px 0 #635250,
+        5px -5px 0 #635250,
+        -5px -5px 0 #635250;
+    font-weight: 900;
+    color: #FFB2B2;
+}
+
+.ChattingBackground {
+    /*大きさ設定*/
+    height: 100%;
+    width: 100%;
+
+    /*背景設定*/
+    /*背景設定*/
+    background-image: url("/Elements/noon.png");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /*位置設定*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*余白設定*/
+    gap: 3%;
+    padding: 10%;
+
+}
+
+.ChattingBox {
+    /*大きさ設定*/
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+
+    /*位置設定*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*背景設定*/
+    background-color: #F4E0BF;
+
+    /*飾り設定*/
+    border-radius: 20px;
+    border: 3px solid #37220E;
+
+    /*余白設定*/
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 5%;
+
+    /*文字設定*/
+    font-family: 'Mochiy Pop P One', 'cursive';
+    color: #423B34;
+    font-size: 25px;
+}
+
+.ChattingField {
+    /*大きさ設定*/
+    width: 100%;
+
+    /*余白設定*/
+    margin-bottom: 10%;
+}
+
+.ChattingField p {
+    /*位置設定*/
+    display: inline-block;
+
+    /*文字設定*/
+    font-family: 'Mochiy Pop P One', 'cursive';
+    color: white;
+    font-size: 25px;
+
+    /*背景設定*/
+    background-color: #BB967A;
+    border-radius: 20px;
+
+    /*余白設定*/
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.ChattingPlayer {
+    /*大きさ設定*/
+    min-height: 100%;
+    width: 100%;
+
+    /*位置設定*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    /*背景設定*/
+    background-color: #FDEFD5;
+    border-radius: 10px;
+    border: 3px solid #AD9574;
+
+    /*余白設定*/
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.ChattingPlayer p {
+    /*文字設定*/
+    font-family: 'Mochiy Pop P One', 'cursive';
+    color: #423B34;
+    font-size: 25px;
+    background-color: transparent;
+}
+

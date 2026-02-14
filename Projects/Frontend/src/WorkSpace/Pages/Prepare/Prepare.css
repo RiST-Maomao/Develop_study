@@ -12,10 +12,47 @@ body,
     width: 100%;
 }
 
-h1 {
+form {
+    height: 100%;
+    width: 100%;
+}
+
+.PrepareInput p.PrepareError {
     /*文字設定*/
-    font-size: 80px;
-    color: white;
+    color: red;
+
+    /*背景設定*/
+    background-color: transparent;
+}
+
+.PrepareBackground{
+    /*大きさ設定*/
+    height: 100%;
+    width: 100%;
+
+    /*背景設定*/
+    /*背景設定*/
+    background-image: url("/Elements/night.png");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /*位置設定*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*余白設定*/
+    gap: 3%;
+    padding: 10%;
+
+}
+
+.PrepareText {
+    /*文字設定*/
+    font-size: 60px;
     font-family: 'Mochiy Pop P One', 'cursive';
     text-shadow:
         5px 5px 0 #635250,
@@ -26,165 +63,100 @@ h1 {
 }
 
 .Pink {
+    /*文字設定*/
     color: #FFB2B2;
     font-weight: 700;
 }
 
 .Blue {
+    /*文字設定*/
     color: #81D4FA;
     font-weight: 700;
 }
 
-.HomeBackground {
+.PrepareBox {
     /*大きさ設定*/
     height: 100%;
     width: 100%;
+
+    /*位置設定*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     /*背景設定*/
-    background-image: url("/Elements/noon.png");
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #F4E0BF;
 
-    /*位置設定*/
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.HomeBox {
-    /*大きさ設定*/
-    height: 100%;
-    width: 100%;
-
-    /*位置設定*/
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    /*飾り設定*/
+    border-radius: 20px;
+    border: 3px solid #37220E;
 
     /*余白設定*/
     padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 10%;
 }
 
-.HomeMenue {
+.PrepareInput{
     /*大きさ設定*/
-    height: 100%;
     width: 100%;
+    height: 100%;
 
     /*位置設定*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
 }
 
-.HomeRule {
-    transform: translateZ(0);
-
-    /*大きさ設定*/
-    height: 20%;
-    width: 30%;
-
-    /*位置設定*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /*飾り設定*/
-    border-radius: 999px;
-    border: 3px solid #37220E;
-    aspect-ratio: 1 / 1;
-    outline: none;
-    transition: transform 0.5s ease;
-    position: relative;
-    cursor: pointer;
-
+.PrepareInput p {
     /*文字設定*/
     font-family: 'Mochiy Pop P One', 'cursive';
-    color: inherit;
-    text-shadow:
-        2px 2px 0 #8D7B77,
-        -2px 2px 0 #8D7B77,
-        2px -2px 0 #8D7B77,
-        -2px -2px 0 #8D7B77,
-        0 4px 6px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 25px;
 
     /*背景設定*/
-    background: linear-gradient(to bottom, #b7daf3 0%, #95c3e8 50%, #6fa3cf 100%);
-    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.5), inset 0 -3px 4px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #BB967A;
+    border-radius: 20px;
 
-    /*文字設定*/
-    font-size: 20px;
-    color: #FDF6DA;
-    font-weight: bold;
+    /*余白設定*/
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
-.HomeRule::before {
-    content: "";
-    position: absolute;
-
-    top: 15px;
-    left: 10px;
-
-    width: 40px;
-    height: 15px;
-
-    background: white;
-    border-radius: 50%;
-
-    transform: rotate(-35deg);
-    /*斜めにする*/
-}
-
-.HomeRule::after {
-    content: "";
-    position: absolute;
-
-    top: 40px;
-    left: 5px;
-
-    width: 10px;
-    height: 10px;
-
-    background: white;
-    border-radius: 50%;
-
-    transform: rotate(20deg);
-}
-
-.HomeRule:hover {
-    /*カーソルに触れている時*/
-    transform: scale(1.1);
-}
-
-.HomeRule:focus-visible {
-    /*tabなどで選択された時*/
-    transform: scale(1.1);
-}
-
-.HomeGame {
+.PrepareTextarea {
     /*大きさ設定*/
-    height: 20%;
+    height: 100%;
     width: 100%;
 
     /*位置設定*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
+
+    /*飾り設定*/
+    border-radius: 15px;
+    border: 3px solid #AD9574;
+    background-color: #FDEFD5;
 
     /*文字設定*/
-    font-size: 35px;
+    font-size: 40px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #423B34;
+
+    /*余白設定*/
+    padding: 3%;
 }
 
-.HomeStart {
+.PrepareTextarea::placeholder {
+    color: #BB967A;
+}
+
+.PrepareButton {
     transform: translateZ(0);
 
     /*大きさ設定*/
-    height: 100%;
+    height: 15%;
     width: 60%;
 
     /*位置設定*/
@@ -221,15 +193,14 @@ h1 {
     font-size: 30px;
     color: #FDF6DA;
     font-weight: bold;
-
 }
 
-.HomeStart::before {
+.PrepareButton::before {
     content: "";
     position: absolute;
 
-    top: 20px;
-    left: 25px;
+    top: 15px;
+    left: 10px;
 
     width: 50px;
     height: 25px;
@@ -237,16 +208,16 @@ h1 {
     background: white;
     border-radius: 50%;
 
-    transform: rotate(-30deg);
+    transform: rotate(-40deg);
     /*斜めにする*/
 }
 
-.HomeStart::after {
+.PrepareButton::after {
     content: "";
     position: absolute;
 
-    top: 55px;
-    left: 15px;
+    top: 50px;
+    left: 5px;
 
     width: 15px;
     height: 10px;
@@ -257,12 +228,12 @@ h1 {
     transform: rotate(20deg);
 }
 
-.HomeStart:hover {
+.PrepareButton:hover {
     /*カーソルに触れている時*/
     transform: scale(1.1);
 }
 
-.HomeStart:focus-visible {
+.PrepareButton:focus-visible {
     /*tabなどで選択された時*/
     transform: scale(1.1);
 }

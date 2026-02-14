@@ -1,3 +1,4 @@
+
 * {
     /*初期設定*/
     margin: 0;
@@ -12,10 +13,9 @@ body,
     width: 100%;
 }
 
-h1 {
+h2 {
     /*文字設定*/
-    font-size: 80px;
-    color: white;
+    font-size: 60px;
     font-family: 'Mochiy Pop P One', 'cursive';
     text-shadow:
         5px 5px 0 #635250,
@@ -23,23 +23,26 @@ h1 {
         5px -5px 0 #635250,
         -5px -5px 0 #635250;
     font-weight: 900;
-}
-
-.Pink {
     color: #FFB2B2;
-    font-weight: 700;
 }
 
-.Blue {
-    color: #81D4FA;
-    font-weight: 700;
+.VoteError {
+    /*文字設定*/
+    color: red;
+    font-size: 25px;
+    font-family: 'Mochiy Pop P One', 'cursive';
+
+    /*背景設定*/
+    background-color: transparent;
 }
 
-.HomeBackground {
+
+.VoteBackground {
     /*大きさ設定*/
     height: 100%;
     width: 100%;
 
+    /*背景設定*/
     /*背景設定*/
     background-image: url("/Elements/noon.png");
     overflow: hidden;
@@ -50,141 +53,91 @@ h1 {
     /*位置設定*/
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: center;
+
+    /*余白設定*/
+    gap: 3%;
+    padding: 10%;
+
 }
 
-.HomeBox {
+.VoteBox {
     /*大きさ設定*/
-    height: 100%;
+    height: 80%;
     width: 100%;
+    overflow-y: auto;
 
     /*位置設定*/
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
+
+    /*背景設定*/
+    background-color: #F4E0BF;
+
+    /*飾り設定*/
+    border-radius: 20px;
+    border: 3px solid #37220E;
 
     /*余白設定*/
     padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 5%;
 }
 
-.HomeMenue {
+.VoteSelect {
     /*大きさ設定*/
-    height: 100%;
-    width: 100%;
+    width: 90%;
 
     /*位置設定*/
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-}
-
-.HomeRule {
-    transform: translateZ(0);
-
-    /*大きさ設定*/
-    height: 20%;
-    width: 30%;
-
-    /*位置設定*/
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center; 
 
-    /*飾り設定*/
-    border-radius: 999px;
-    border: 3px solid #37220E;
-    aspect-ratio: 1 / 1;
-    outline: none;
-    transition: transform 0.5s ease;
-    position: relative;
-    cursor: pointer;
+    /*背景設定*/
+    background-color: #FDEFD5;
+    border-radius: 20px;
+    border: 3px solid #AD9574;
 
     /*文字設定*/
     font-family: 'Mochiy Pop P One', 'cursive';
-    color: inherit;
-    text-shadow:
-        2px 2px 0 #8D7B77,
-        -2px 2px 0 #8D7B77,
-        2px -2px 0 #8D7B77,
-        -2px -2px 0 #8D7B77,
-        0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #423B34;
+    font-size: 30px;
 
-    /*背景設定*/
-    background: linear-gradient(to bottom, #b7daf3 0%, #95c3e8 50%, #6fa3cf 100%);
-    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.5), inset 0 -3px 4px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.2);
-
-    /*文字設定*/
-    font-size: 20px;
-    color: #FDF6DA;
-    font-weight: bold;
+    /*余白設定*/
+    gap: 3%;
+    padding: 5%;
 }
 
-.HomeRule::before {
-    content: "";
+.VoteSelect input[type="radio"] {
     position: absolute;
-
-    top: 15px;
-    left: 10px;
-
-    width: 40px;
-    height: 15px;
-
-    background: white;
-    border-radius: 50%;
-
-    transform: rotate(-35deg);
-    /*斜めにする*/
+    opacity: 0;
 }
 
-.HomeRule::after {
-    content: "";
-    position: absolute;
-
-    top: 40px;
-    left: 5px;
-
-    width: 10px;
-    height: 10px;
-
-    background: white;
-    border-radius: 50%;
-
-    transform: rotate(20deg);
+.VoteSelect:has(input:checked) {
+    background-color: #AD9574;
+    border: 3px solid #FDEFD5;
+    color: #FDEFD5;
 }
 
-.HomeRule:hover {
+.VoteSelect:hover {
     /*カーソルに触れている時*/
     transform: scale(1.1);
 }
 
-.HomeRule:focus-visible {
+.VoteSelect:focus-visible {
     /*tabなどで選択された時*/
     transform: scale(1.1);
 }
 
-.HomeGame {
-    /*大きさ設定*/
-    height: 20%;
-    width: 100%;
-
-    /*位置設定*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    /*文字設定*/
-    font-size: 35px;
-}
-
-.HomeStart {
+.VoteButton {
     transform: translateZ(0);
 
     /*大きさ設定*/
-    height: 100%;
+    height: 15%;
     width: 60%;
 
     /*位置設定*/
@@ -221,15 +174,14 @@ h1 {
     font-size: 30px;
     color: #FDF6DA;
     font-weight: bold;
-
 }
 
-.HomeStart::before {
+.VoteButton::before {
     content: "";
     position: absolute;
 
-    top: 20px;
-    left: 25px;
+    top: 15px;
+    left: 10px;
 
     width: 50px;
     height: 25px;
@@ -237,16 +189,16 @@ h1 {
     background: white;
     border-radius: 50%;
 
-    transform: rotate(-30deg);
+    transform: rotate(-40deg);
     /*斜めにする*/
 }
 
-.HomeStart::after {
+.VoteButton::after {
     content: "";
     position: absolute;
 
-    top: 55px;
-    left: 15px;
+    top: 50px;
+    left: 5px;
 
     width: 15px;
     height: 10px;
@@ -257,12 +209,12 @@ h1 {
     transform: rotate(20deg);
 }
 
-.HomeStart:hover {
+.VoteButton:hover {
     /*カーソルに触れている時*/
     transform: scale(1.1);
 }
 
-.HomeStart:focus-visible {
+.VoteButton:focus-visible {
     /*tabなどで選択された時*/
     transform: scale(1.1);
 }

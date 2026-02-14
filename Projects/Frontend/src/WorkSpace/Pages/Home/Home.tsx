@@ -1,5 +1,5 @@
 import "./Home.css"
-import HomeButton from "../../Components/HomeButton/HomeButton";
+import GrowButton from "../../Components/GrowButton/GrowButton";
 
 function Home() {
     return (
@@ -7,16 +7,12 @@ function Home() {
             <h1><span className="Pink">〇〇</span>
                 <span className="Blue">人狼</span>
             </h1>
-            <div className="HomeMenue">
-                <HomeButton label="ルール" onClick={() => window.location.href = "/LoginRegister"} type="button" />
-                <HomeButton label="AI" onClick={() => window.location.href = "/LoginRegister"} type="button" />
-            </div>
-            <div className="HomeGame">
-                <div className ="HomeSeeking">
-                    <HomeButton label="ルーム募集" onClick={() => window.location.href = "/LoginRegister"} type="button" />
+            <div className="HomeBox">
+                <div className="HomeMenue">
+                    <GrowButton label="ルール" onClick={() => window.location.href = "/Rule"} className="HomeRule"type="button" />
                 </div>
-                <div className="HomeJoin">
-                    <HomeButton label="ルーム参加" onClick={() => window.location.href = "/LoginRegister"} type="button" />
+                <div className="HomeGame">
+                    <GrowButton label="スタート" onClick={() => window.location.href = "/Register"} className="HomeStart"type="button" />
                 </div>
             </div>
         </div>
